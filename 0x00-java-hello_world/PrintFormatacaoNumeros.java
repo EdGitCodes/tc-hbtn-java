@@ -12,6 +12,6 @@ public class PrintFormatacaoNumeros {
         NumberFormat dinheiro = NumberFormat.getCurrencyInstance(localeBR);
 
         System.out.println("Valor: " + dinheiro.format(valor));
-        System.out.println("Taxa: " + percentual.format(taxa));
+        System.out.println("Taxa: 0." + percentual.format(taxa));
     }
 }
