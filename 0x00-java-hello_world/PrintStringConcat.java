@@ -5,7 +5,4 @@ public class PrintStringConcat {
         String Stderr = new String ("Bem vindo a " + texto1 + " " + texto2 + "!");
         System.out.println (Stderr);
 
-
-
-    }
-};
+    }};
