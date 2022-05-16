@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.util.*;
 
 
-public class PrintFormatacaoNumeros {
+public class TesteStrings {
     public static void main(String[] args) {
 
         float taxa = 0.2456f;
