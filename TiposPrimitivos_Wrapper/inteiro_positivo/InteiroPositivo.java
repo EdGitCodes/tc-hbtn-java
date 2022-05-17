@@ -40,7 +40,7 @@ public class InteiroPositivo {
                 div++;
             }
         }
-        if (div == 2 || getValor() == 1){
+        if (div == 2 ){
             return true;
         }else{
             return false;
