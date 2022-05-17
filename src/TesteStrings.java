@@ -11,6 +11,7 @@ public class TesteStrings {
         Locale localeBR = new Locale("en","US");
 
         NumberFormat dinheiro = NumberFormat.getInstance(localeBR);
+        dinheiro.setMaximumFractionDigits(2);
         System.out.println("Valor: R$ " + dinheiro.format(valor));
         System.out.printf("Taxa: %.02f%%", taxa);
 
