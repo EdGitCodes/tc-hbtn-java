@@ -4,3 +4,4 @@ public class PrintInteger{
         System.out.println("Avenida Andaló, " + numero);
     }
 }
+
