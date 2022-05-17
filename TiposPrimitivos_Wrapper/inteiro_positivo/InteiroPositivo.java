@@ -35,7 +35,7 @@ public class InteiroPositivo {
 
     public boolean ehPrimo() {
         int div = 0;
-        for (int i = 1; i < getValor() ; i++) {
+        for (int i = 1; i <= getValor() ; i++) {
             if (getValor()%i == 0 ){
                 div++;
             }
