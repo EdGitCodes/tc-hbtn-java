@@ -13,7 +13,7 @@ public class PrintFormatacaoNumeros {
         dinheiro.setMaximumFractionDigits(2);
 
         System.out.println("Valor: R$ " + dinheiro.format(valor));
-        System.out.printf("Taxa: %.02f%%", taxa , "%n");
+        System.out.printf("Taxa: %.02f%%", taxa , "\n");
 
     }
 }
