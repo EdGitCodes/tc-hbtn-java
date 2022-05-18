@@ -4,7 +4,6 @@ public class PersonagemGame {
     private int quantidadeDeCura;
     private int saudeAtual;
     private String nome;
-
     public int tomarDano(int quantidadeDeDano) {
         if(saudeAtual > 0){
             this.saudeAtual = this.saudeAtual - quantidadeDeDano;
