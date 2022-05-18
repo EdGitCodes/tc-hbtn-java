@@ -12,4 +12,5 @@ public class Program {
         System.out.printf("Nome: %s - Saude: %d\n", personagem1.nome, personagem1.saudeAtual);
         System.out.printf("Nome: %s - Saude: %d\n", personagem2.nome, personagem2.saudeAtual);
     }
+
 }
