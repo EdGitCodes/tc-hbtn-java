@@ -27,5 +27,4 @@ public class Empregado {
     public int getCodigo() {
         return codigo;
     }
-
 }
