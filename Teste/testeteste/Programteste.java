@@ -1,4 +1,3 @@
-package testeteste;
 
 public class Programteste {
     public static void main(String[] args) {
