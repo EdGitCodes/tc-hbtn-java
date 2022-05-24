@@ -18,7 +18,7 @@ public class Quadrado extends Retangulo{
         return (lado*lado);
     }
     public String toString(){
-        return ("[Quadrado] " + lado);
+        return ("[Quadrado] " + String.format("%.2f",lado));
     }
 
 }
