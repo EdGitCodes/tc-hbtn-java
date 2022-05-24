@@ -1,7 +1,3 @@
-package retangulo;
-
-import forma.FormaGeometrica;
-
 public class Retangulo extends FormaGeometrica {
 
     private double largura;
