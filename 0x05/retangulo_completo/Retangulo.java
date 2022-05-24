@@ -1,3 +1,4 @@
+
 public class Retangulo extends FormaGeometrica{
     private double largura;
     private double altura;
@@ -31,6 +32,6 @@ public class Retangulo extends FormaGeometrica{
     }
 
     public String toString(){
-        return ("[Retangulo] %.2f%%" + largura + " / %.2f%%" + altura);
+        return ("[Retangulo] %.2f" , largura + " / %.2f" , altura);
     }
 }
