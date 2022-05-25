@@ -1,17 +1,18 @@
 import java.util.Locale;
 import produtos.*;
+
 public class Program {
     public static void main(String[] args) {
-        pedido_livraria.produtos.Livro livro1 = new pedido_livraria.produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
-        pedido_livraria.produtos.Livro livro2 = new pedido_livraria.produtos.Livro("Um de nós está mentindo", 2018, "Brasil", 34.93, 384,
+        produtos.Livro livro1 = new produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
+        produtos.Livro livro2 = new produtos.Livro("Um de nós está mentindo", 2018, "Brasil", 34.93, 384,
                 "Karen Mcmanus", 1);
-        pedido_livraria.produtos.Livro livro3 = new pedido_livraria.produtos.Livro("Mindset Milionário", 2021, "Brasil", 31.70, 272,
+        produtos.Livro livro3 = new produtos.Livro("Mindset Milionário", 2021, "Brasil", 31.70, 272,
                 "José Roberto Marques", 1);
 
-        pedido_livraria.produtos.Dvd dvd1 = new pedido_livraria.produtos.Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos", 16.90,
+        produtos.Dvd dvd1 = new produtos.Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos", 16.90,
                 "Anna Foerster",
                 "Ação", 91);
-        pedido_livraria.produtos.Dvd dvd2 = new pedido_livraria.produtos.Dvd("Annabelle 2 - A Criação do Mal", 2017, "Brasil", 39.90,
+        produtos.Dvd dvd2 = new produtos.Dvd("Annabelle 2 - A Criação do Mal", 2017, "Brasil", 39.90,
                 "Jame Wan e Peter Safran",
                 "Terror",
                 109);
@@ -25,6 +26,7 @@ public class Program {
         Pedido pedido1 = new Pedido(0, itensPedido1);
 
         System.out.printf("Total Pedido: %.2f\n", pedido1.calcularTotal());
+
         // Pedido 2
         ItemPedido[] itensPedido2 = new ItemPedido[] {
                 new ItemPedido(livro1, 1),
