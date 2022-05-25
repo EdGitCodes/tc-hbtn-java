@@ -1,5 +1,3 @@
-import produtos.*;
-
 public class ItemPedido {
 
     protected int quantidade;
