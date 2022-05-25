@@ -41,7 +41,7 @@ public class Pedido {
         System.out.println("DESCONTO: " + String.format("%.2f",desc));
         System.out.println("TOTAL PRODUTOS: " + String.format("%.2f", (total)));
         System.out.println("----------------------------");
-        System.out.println("TOTAL PRODUTOS: " + String.format("%.2f", (total - desc)));
+        System.out.println("TOTAL PEDIDO: " + String.format("%.2f", (total - desc)));
         System.out.println("----------------------------");
     }
     
