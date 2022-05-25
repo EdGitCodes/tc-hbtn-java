@@ -1,3 +1,5 @@
+package pedido_livraria;
+
 public class ItemPedido {
 
     protected int quantidade;
