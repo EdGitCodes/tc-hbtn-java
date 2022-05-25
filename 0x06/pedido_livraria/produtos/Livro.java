@@ -1,3 +1,4 @@
+package pedido_livraria.produtos;
 
 import pedido_livraria.produtos.Produto;
 
