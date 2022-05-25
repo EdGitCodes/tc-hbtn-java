@@ -1,6 +1,4 @@
-package pedido_livraria;
-
-import pedido_livraria.produtos.Produto;
+package pedido_livraria.produtos;
 
 public class Dvd extends Produto {
 
