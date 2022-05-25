@@ -1,6 +1,5 @@
-package pedido_livraria;
 
-import pedido_livraria.produtos.*;
+import produtos.*;
 
 public class ItemPedido {
 

@@ -1,5 +1,5 @@
-package pedido_livraria;
 
+import produtos.*;
 public class Pedido {
 
     protected ItemPedido[] itens;

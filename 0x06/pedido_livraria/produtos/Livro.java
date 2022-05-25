@@ -1,6 +1,4 @@
-package pedido_livraria.produtos;
-
-import pedido_livraria.produtos.Produto;
+package produtos;
 
 public class Livro extends Produto {
 
