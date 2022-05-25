@@ -1,5 +1,5 @@
+import pedido_livraria.produtos.ItemPedido;
 import pedido_livraria.produtos.Livro;
-import pedido_livraria.produtos.Produto;
 
 public class Pedido {
 

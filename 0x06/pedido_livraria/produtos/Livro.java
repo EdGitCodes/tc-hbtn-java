@@ -1,4 +1,6 @@
-public class Livro extends Produto{
+import pedido_livraria.produtos.Produto;
+
+public class Livro extends Produto {
 
     private int paginas;
     private String autor;

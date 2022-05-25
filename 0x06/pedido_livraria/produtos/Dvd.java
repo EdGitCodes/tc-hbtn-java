@@ -1,4 +1,6 @@
-public class Dvd extends Produto{
+import pedido_livraria.produtos.Produto;
+
+public class Dvd extends Produto {
 
     private String diretor;
     private String genero;
