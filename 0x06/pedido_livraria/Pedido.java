@@ -1,5 +1,3 @@
-package pedido_livraria;
-
 import pedido_livraria.produtos.ItemPedido;
 import pedido_livraria.produtos.Livro;
 

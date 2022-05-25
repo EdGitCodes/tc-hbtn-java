@@ -1,5 +1,3 @@
-package pedido_livraria;
-
 public class Program {
     public static void main(String[] args) {
         pedido_livraria.produtos.Livro livro1 = new pedido_livraria.produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
