@@ -1,3 +1,5 @@
+import pedido_livraria.produtos.*;
+
 public class ItemPedido {
 
     protected int quantidade;
