@@ -21,6 +21,7 @@ public class ListaTodo {
         for (Tarefa i : tarefas) {
             if (i.getIdentificador() == identificador) {
                 i.setEstahFeita(true);
+                return true;
             }
         }
         return false;
@@ -30,9 +31,10 @@ public class ListaTodo {
         for (Tarefa i : tarefas) {
             if (i.getIdentificador() == identificador) {
                 i.setEstahFeita(false);
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
 
