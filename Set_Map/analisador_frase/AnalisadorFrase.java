@@ -4,7 +4,12 @@ public class AnalisadorFrase {
 
     public static TreeMap<String, Integer> contagemPalavras(String descricao) {
         TreeMap<String , Integer> contagem = new TreeMap<>();
+
         descricao = descricao.toLowerCase();
+        descricao = descricao.replace(".","");
+        descricao = descricao.replace("!","");
+        descricao = descricao.replace("?","");
+
         String[] keys = descricao.split(" ");
         for(int i = 0; i < keys.length; i++ ){
 
