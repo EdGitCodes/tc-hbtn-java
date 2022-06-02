@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class Biblioteca <Midia>{
+public class Biblioteca <T> extends Midia{
 
-    private ArrayList<Midia> lista = new ArrayList<Midia>();
-    public void adicionarMidia(Midia livro) {
+    private ArrayList<T> lista = new ArrayList<T>();
+    public void adicionarMidia(T livro) {
         lista.add(livro);
     }
 
 
-    public ArrayList<Midia> obterListaMidias() {
+    public ArrayList<T> obterListaMidias() {
         return lista;
     }
 }
