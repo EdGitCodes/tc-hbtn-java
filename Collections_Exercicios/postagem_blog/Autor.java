@@ -10,7 +10,7 @@ public class Autor implements Comparable{
 
     @Override
     public String toString(){
-        return (getNome() + getSobrenome());
+        return (getNome() + " " + getSobrenome());
     }
 
     public String getNome() {
