@@ -2,15 +2,15 @@ import java.util.*;
 
 public class Blog {
 
-    private ArrayList<Post> list = new ArrayList<Post>();
-    public void adicionarPostagem(Post list) {
+    private ArrayList<Post> listPostagem = new ArrayList<Post>();
+    public void adicionarPostagem(Post post) {
 
-        this.list.add(list);
+        this.listPostagem.add(post);
     }
 
     public Set<String> obterTodosAutores() {
         Set<String> sortedList = new TreeSet<>();
-        for(Post i: list){
+        for(Post i: listPostagem){
             if(!i.getAutor().equals(null)){
                 sortedList.add(i.getAutor());
             }
@@ -21,7 +21,7 @@ public class Blog {
     public Map<String, Integer> obterContagemPorCategoria() {
         Map<String, Integer> postagens = new TreeMap<>();
         ArrayList<String> categoria= new ArrayList<>();
-        for(Post x: list){
+        for(Post x: listPostagem){
             categoria.add(x.getCategoria());
             postagens.put(x.getCategoria(), Collections.frequency(categoria, x.getCategoria()));
         }
