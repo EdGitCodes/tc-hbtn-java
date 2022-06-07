@@ -41,7 +41,7 @@ public class Program {
                     livroEdicaoOuro2.getAutor(),
                     livroEdicaoOuro2.getPreco());
         } catch (Exception ex) {
-            System.out.println("\n");
+            System.out.println(ex.getMessage() + "\n");
         }
 
         try {
@@ -55,7 +55,7 @@ public class Program {
                     livro2.getAutor(),
                     livro2.getPreco());
         } catch (Exception ex) {
-            System.out.println("\n");
+            System.out.println(ex.getMessage() + "\n");
         }
 
         try {
@@ -69,7 +69,7 @@ public class Program {
                     livro3.getAutor(),
                     livro3.getPreco());
         } catch (Exception ex) {
-            System.out.println( "\n");
+            System.out.println(ex.getMessage() + "\n");
         }
     }
 }

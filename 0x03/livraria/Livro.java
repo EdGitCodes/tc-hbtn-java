@@ -6,48 +6,48 @@ public class Livro {
     private String titulo;
     private String autor;
     private double preco;
-    public Livro(String titulo, String autor, double preco) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.preco = preco;
+    public Livro(String titulo, String autor, double preco) throws LivroInvalidoException , AutorInvalidoException{
+        setAutor(autor);
+        setPreco(preco);
+        setTitulo(titulo);
     }
 
-    public String getTitulo() throws LivroInvalidoException {
-        if(titulo.length() < 3){
-            throw new LivroInvalidoException(titulo);
-        }
+    public String getTitulo(){
         return titulo;
 
     }
 
-    public void setTitulo(String titulo){
+    public void setTitulo(String titulo) throws LivroInvalidoException {
+        if(titulo.length() < 3){
+            throw new LivroInvalidoException("Titulo de livro invalido");
+        }
         this.titulo = titulo;
     }
 
-    public String getAutor() throws AutorInvalidoException {
+    public String getAutor(){
+        return autor;
+    }
+
+    public void setAutor(String autor) throws AutorInvalidoException {
         String[] separar = autor.split(" ");
         int contagemNomes = 0;
         for(int i = 0; i < separar.length; i++){
             contagemNomes++;
         }
         if(contagemNomes < 2){
-            throw new AutorInvalidoException(autor);
+            throw new AutorInvalidoException("Nome de autor invalido");
         }
-        return autor;
-    }
-
-    public void setAutor(String autor){
         this.autor = autor;
     }
 
     public double getPreco() throws LivroInvalidoException {
-        if(preco <= 0){
-            throw new LivroInvalidoException(preco);
-        }
         return preco;
     }
 
-    public void setPreco(double preco){
+    public void setPreco(double preco) throws LivroInvalidoException {
+        if(preco <= 0){
+            throw new LivroInvalidoException("Preco de livro invalido");
+        }
         this.preco = preco;
     }
 
