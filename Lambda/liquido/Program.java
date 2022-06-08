@@ -1,8 +1,5 @@
-import java.util.Locale;
-
 public class Program {
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("pt", "BR"));
         Funcionario funcionario1 = new Funcionario(2360);
 
         double salarioLiquido90porcento = FolhaPagamento.calcularLiquido(funcionario1, x -> x * 0.9);
