@@ -14,7 +14,7 @@ public class Produto {
 
     @Override
     public String toString(){
-        return (getCodigo() + " " + getNome() + " " + getCategoria() + " R$ " + getPreco());
+        return String.format("[%d] %s %s R$ %.2f", getCodigo(), getNome(), getCategoria(), getPreco());
     }
 
     public int getCodigo() {
