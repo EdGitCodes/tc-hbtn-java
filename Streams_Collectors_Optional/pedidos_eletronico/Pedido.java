@@ -16,7 +16,7 @@ public class Pedido {
 
     @Override
     public String toString(){
-        return ("[" + getCodigo() + "] [" + cliente.getNome() + "]");
+        return ("[" + getCodigo() + "] " + cliente.getNome());
     }
 
     public int getCodigo() {
