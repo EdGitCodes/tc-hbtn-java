@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Estudante implements Serializable {
 
-    private transient int idade;
-    private transient String nome;
+    private int idade;
+    private String nome;
     private transient String senha;
 
     public Estudante(int idade, String nome, String senha) {
@@ -15,7 +15,7 @@ public class Estudante implements Serializable {
 
     @Override
     public String toString(){
-        return String.format("nome='%s', idade='%d', senha='%s'", getNome(), getIdade(), getSenha());
+        return String.format("Estudante {nome='%s', idade='%d', senha='%s}'", getNome(), getIdade(), getSenha());
     }
 
     public int getIdade() {

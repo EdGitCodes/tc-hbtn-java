@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SerializarEstudantes<E> {
+public class SerializarEstudantes <Estudante>{
 
     private String nomeArquivo;
 
@@ -12,21 +12,20 @@ public class SerializarEstudantes<E> {
 
     public void serializar(List<Estudante> estudantes) {
 
-        FileOutputStream fos = null;
+        FileOutputStream fos;
         ObjectOutputStream oos = null;
         try{
             fos = new FileOutputStream(getNomeArquivo());
             oos = new ObjectOutputStream(fos);
             oos.writeObject(estudantes);
 
-        } catch (FileNotFoundException e) {
-            System.out.println("Nao foi possivel serializar");
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Nao foi possivel serializar");
         }
     }
+    @SuppressWarnings("unchecked")
+    public List<Estudante> desserializar(){
 
-    public List<Estudante> desserializar() {
         List<Estudante> lista = new ArrayList<>();
         FileInputStream fis = null;
         ObjectInputStream ois = null;
@@ -35,12 +34,13 @@ public class SerializarEstudantes<E> {
             ois = new ObjectInputStream(fis);
             lista  = (List<Estudante>)ois.readObject();
 
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             System.out.println("Nao foi possivel desserializar");
-        } catch (IOException e) {
-            System.out.println("Nao foi possivel desserializar");
-        } catch (ClassNotFoundException e) {
-            System.out.println("Nao foi possivel desserializar");
+        }finally {
+            if(ois != null) {
+
+                return lista;
+            }
         }
         return lista;
     }
